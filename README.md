@@ -1,2 +1,9 @@
 # Medical-ChatBot
-AI-powered medical chatbot using Ollama and a simple RAG pipeline to answer questions based on medical PDFs. Uses LangChain and Hugging Face embeddings for semantic search, with Pinecone on AWS to store and retrieve document vectors for context-aware responses.
+A medical chatbot built with Python, Ollama, and LangChain using a simple Retrieval-Augmented Generation (RAG) system. It uses Hugging Face embeddings to process medical PDFs and Pinecone on AWS to store and retrieve document vectors, helping generate relevant answers to user questions.
+
+Technologies
+Python 3.10
+LangChain
+Ollama (Llama 3.2)
+Hugging Face Embeddings
+Pinecone (AWS)
