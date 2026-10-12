@@ -22,23 +22,58 @@ Before getting started, make sure you have installed:
 
 Python 3.10
 Git
-Conda (Anaconda or Miniconda)
 Ollama
 A Pinecone account and API key
-A Hugging Face account or access to the required embedding model, if applicable
-🛠️ Installation and Setup
+Access to the required Hugging Face embedding model
+ 
+ Installation and Setup
 Step 1: Clone the Repository
-git clone https://github.com/entbappy/End-to-End-Medical-Chatbot.git
-
+git clone https://github.com/MELKEMIABDOU/Medical-ChatBot.git
 Step 2: Navigate to the Project Directory
-cd End-to-End-Medical-Chatbot
+cd Medical-ChatBot
+Step 3: Create a Python Virtual Environment
+Create a virtual environment using Python's built-in venv module:
 
-Step 3: Create and Activate a Conda Environment
-conda create -n medibot python=3.10 -y
-conda activate medibot
+python -m venv venv
+Activate the virtual environment according to your operating system.
 
+Windows (Command Prompt):
+
+venv\Scripts\activate
+Windows (PowerShell):
+
+.\venv\Scripts\Activate.ps1
+macOS / Linux:
+
+source venv/bin/activate
 Step 4: Install Dependencies
+Make sure your virtual environment is activated, then install the required Python packages:
+
+python -m pip install --upgrade pip
 pip install -r requirements.txt
+Step 5: Configure Environment Variables
+Configure the API keys and settings required by the application, including your Pinecone API key.
+
+If your project uses a .env file, create it in the project root and add the variables expected by your code.
+
+Important: Never upload API keys or other sensitive credentials to GitHub.
+
+Step 6: Set Up Ollama
+Install Ollama from the official website:
+
+https://ollama.com/
+
+Download the Llama 3.2 model:
+
+ollama pull llama3.2
+Verify that the model is installed:
+
+ollama list
+Step 7: Run the Application
+Run the application using the entry-point file in your repository. For example, if the main file is app.py:
+
+python app.py
+Replace app.py with the correct filename if your project uses a different entry point.
 
  Configuration
 
