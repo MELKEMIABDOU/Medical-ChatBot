@@ -130,8 +130,7 @@ Fork the repository.
 Create a feature branch.
 Commit your changes.
 Open a pull request.
-📄 License
 
-Add the appropriate license to this repository if you intend to distribute or reuse the project.
+ 
 
 Built with Python, LangChain, Ollama, Hugging Face, and Pinecone.
