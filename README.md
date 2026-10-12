@@ -1,22 +1,22 @@
-Medical Chatbot 🩺
+Medical Chatbot 
 
 An AI-powered medical chatbot built with Python, LangChain, Ollama, Hugging Face Embeddings, and Pinecone. This project uses a Retrieval-Augmented Generation (RAG) system to retrieve relevant information from medical PDF documents and generate context-aware answers to user questions.
 
-🚀 Technologies Used
+ Technologies Used
 Python 3.10 – Core programming language
 LangChain – LLM orchestration and RAG pipeline
 Ollama (Llama 3.2) – Local large language model
 Hugging Face Embeddings – Text embedding generation
 Pinecone – Vector database for storing and retrieving document embeddings
 AWS – Cloud infrastructure for the vector database
-✨ Features
+ Features
 Medical question answering based on document retrieval
 PDF document processing and text extraction
 Semantic search using vector embeddings
 Context-aware responses using Retrieval-Augmented Generation (RAG)
 Integration with a locally running Llama model through Ollama
 Vector storage and retrieval using Pinecone
-📋 Prerequisites
+ Prerequisites
 
 Before getting started, make sure you have installed:
 
@@ -40,7 +40,7 @@ conda activate medibot
 Step 4: Install Dependencies
 pip install -r requirements.txt
 
-⚙️ Configuration
+ Configuration
 
 Configure the API credentials and model settings required by the application.
 
@@ -55,7 +55,7 @@ PINECONE_API_KEY=your_pinecone_api_key
 
 Important: Never commit API keys, passwords, or other secrets to GitHub. Add .env to your .gitignore file.
 
-🤖 Set Up Ollama
+ Set Up Ollama
 
 Install Ollama from the official website:
 
@@ -73,7 +73,7 @@ ollama list
 
 Make sure the model name matches the one configured in your application.
 
-📚 Medical PDF Documents
+ Medical PDF Documents
 
 The chatbot uses medical PDF documents as its knowledge source.
 
@@ -88,7 +88,7 @@ Pass the retrieved context to the language model to generate an answer.
 
 Follow the repository's implementation to determine where to place PDF files and how to run the document ingestion process.
 
-▶️ Run the Application
+ Run the Application
 
 Once the dependencies, environment variables, Ollama model, and Pinecone configuration are ready, run the application using the entry point defined in the repository.
 
@@ -99,38 +99,30 @@ python app.py
 
 If it uses a different entry point, replace app.py with the appropriate filename. Check the project files for the correct command.
 
-🏗️ Project Architecture
-Medical PDFs
-     |
-     v
+ Project Architecture
+Medical PDFs -->
+     
 Document Loading and Text Splitting
-     |
-     v
+     -->
 Hugging Face Embeddings
-     |
-     v
+     -->
 Pinecone Vector Database
-     |
-     v
+     -->
 User Question
-     |
-     v
+     -->
 Semantic Retrieval
-     |
-     v
+     -->
 Relevant Document Context
-     |
-     v
+     -->
 Ollama (Llama 3.2) + LangChain
-     |
-     v
+     -->
 Generated Answer
 
-🔒 Disclaimer
+ Disclaimer
 
 This project is intended for educational and research purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional for medical concerns.
 
-👨‍💻 Contributing
+ Contributing
 
 Contributions, suggestions, and improvements are welcome.
 
