@@ -100,8 +100,8 @@ python app.py
 If it uses a different entry point, replace app.py with the appropriate filename. Check the project files for the correct command.
 
  Project Architecture
-Medical PDFs -->
-     
+Medical PDFs 
+     -->     
 Document Loading and Text Splitting
      -->
 Hugging Face Embeddings
